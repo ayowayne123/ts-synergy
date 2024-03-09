@@ -1,4 +1,4 @@
-import { Inter } from "next/font/google"
+import { Inter } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
 import Header from "./header";

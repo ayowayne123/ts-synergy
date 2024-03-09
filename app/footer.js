@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer className='bg-synergyBlue pb-10'>
         <div className='container text-white font-light text-lg '>
-            <div className='flex flex-row py-16  justify-between'>
+            <div className='flex lg:flex-row py-16 flex-col  justify-between'>
             <div className='flex flex-col gap-2'>
             <Link
             href="/"
@@ -43,7 +43,7 @@ function Footer() {
       </ul>
             </div>
 
-            <nav className='w-[300px] grid grid-cols-2 gap-y-2 flex-none  self-start mt-20 '>
+            <nav className='lg:w-[300px] grid grid-cols-2 gap-y-2 flex-none  self-start mt-20 '>
 
             <Link
               href="/"

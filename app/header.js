@@ -27,7 +27,7 @@ function Header() {
             </div>
 
           </Link>
-          <nav className="flex flex-row gap-[50px] font-light ">
+          <nav className="lg:flex flex-row lg:gap-[44px] font-light hidden ">
             <Link
               href="/"
               className={`cursor-pointer ${pathname == "/" ? "text-synergyBlue font-normal" : ""}`}
