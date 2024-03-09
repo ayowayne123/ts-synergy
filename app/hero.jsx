@@ -9,10 +9,10 @@ import Image from "next/image";
 function Hero() {
   return ( 
     <div className="  flex flex-col jusify-between font-light">
-    <div className="container font-light flex flex-col flex-grow justify-center pb-4 lg:gap-3 xl:gap-5 h-[calc(100dvh_-_300px)] min-h-[420px]">
+    <div className="container font-light flex flex-col flex-grow justify-center  lg:gap-4 xl:gap-5 h-[calc(100dvh_-_300px)] min-h-[420px]">
         <h1 className="text-synergyBlue font-bold w-[900px] 
          text-[64px] flex mx-auto text-center px-2 ">Empowering Financial Success Together</h1>
-         <span className="max-w-[600px] flex mx-auto text-center text-2xl leading-9 mt-2">
+         <span className="max-w-[600px] flex mx-auto text-center text-2xl leading-9 my-2">
          We empower your financial success. With expertise, integrity, and innovation, we provide tailored consultancy services. Let&apos;s unlock your potential together.
          </span>
          <Link href='/' className="bg-synergyBlue mx-auto flex rounded-full items-center justify-between  hover:opacity-70
