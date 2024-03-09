@@ -12,11 +12,11 @@ function Hero() {
     <div className="container font-light flex flex-col flex-grow justify-end pb-4 gap-3 h-[calc(100dvh_-_250px)] min-h-[450px]">
         <h1 className="text-synergyBlue font-bold w-[900px] 
          text-[64px] flex mx-auto text-center px-2 ">Empowering Financial Success Together</h1>
-         <span className="w-[600px] flex mx-auto text-center text-2xl leading-9 mt-2">
+         <span className="max-w-[600px] flex mx-auto text-center text-2xl leading-9 mt-2">
          We empower your financial success. With expertise, integrity, and innovation, we provide tailored consultancy services. Let&apos;s unlock your potential together.
          </span>
          <Link href='/' className="bg-synergyBlue mx-auto flex rounded-full items-center justify-between  hover:opacity-70
-          text-white w-[270px] h-[69px] text-lg font-semibold px-6 ">
+          text-white max-w-[270px] h-[69px] text-lg font-semibold px-6 ">
             <span>Get Started</span><FaArrowRight size={16}/></Link>
 
 </div>
@@ -28,7 +28,7 @@ function Hero() {
         <div className="col-span-3 flex flex-col justify-between">
            <div>
             <h2 className="text-synergyBlue font-semibold text-3xl">Our Essence</h2>
-            <p className="w-[400px] flex text-xl mt-3">Explore our tailored solutions driven by integrity and excellence, 
+            <p className="max-w-[400px] flex text-xl mt-3">Explore our tailored solutions driven by integrity and excellence, 
                 empowering individuals and businesses to navigate finance with confidence.</p>
             </div> 
             <Image src={heroImage} className="object-contain w-full h-[460px] mr-10  object-left " alt="man sitting behind laptop"/>
