@@ -63,12 +63,15 @@ export const metadata = {
   description: "TS Synergy Consultancy Service Limited is a leading provider of financial consultancy services, dedicated to helping individuals and businesses achieve their financial goals. Explore our tailored solutions driven by integrity and excellence, empowering individuals and businesses to navigate finance with confidence. Our mission is to deliver unparalleled value to our clients by providing comprehensive financial consultancy services tailored to their unique needs and objectives. Our core values of excellence, integrity, innovation, collaboration, and client-centricity drive everything we do, setting the standard for excellence in the financial consultancy industry.",
   keywords: "TS Synergy, Synergy Consultancy, financial consultancy, financial services, integrity, excellence, innovation, collaboration, client-centricity",
   author: "Ayomide Wayne",
+  openGraph: {
+    title: "TS Synergy Consultancy Service Limited",
+    description: "TS Synergy Consultancy Service Limited is a leading provider of financial consultancy services, dedicated to helping individuals and businesses achieve their financial goals. Explore our tailored solutions driven by integrity and excellence, empowering individuals and businesses to navigate finance with confidence. Our mission is to deliver unparalleled value to our clients by providing comprehensive financial consultancy services tailored to their unique needs and objectives. Our core values of excellence, integrity, innovation, collaboration, and client-centricity drive everything we do, setting the standard for excellence in the financial consultancy industry.",
+    url: "http://www.tssynergyconsult.com/",
+    siteName: "Ts Synergy",
+    locale: "en-US",
+    type: "website",
+  },
   canonicalUrl: "http://www.tssynergyconsult.com/",
-  ogTitle: "TS Synergy Consultancy Service Limited",
-  ogDescription: "TS Synergy Consultancy Service Limited is a leading provider of financial consultancy services, dedicated to helping individuals and businesses achieve their financial goals. Explore our tailored solutions driven by integrity and excellence, empowering individuals and businesses to navigate finance with confidence. Our mission is to deliver unparalleled value to our clients by providing comprehensive financial consultancy services tailored to their unique needs and objectives. Our core values of excellence, integrity, innovation, collaboration, and client-centricity drive everything we do, setting the standard for excellence in the financial consultancy industry.",
-  ogUrl: "http://www.tssynergyconsult.com/",
-  ogImage: "../public/og.png",
-  // twitterSite: "@tssynergy",
   type: "website",
   charset: "UTF-8"
 };
