@@ -9,7 +9,7 @@ import Image from "next/image";
 function Hero() {
   return ( 
     <div className="  flex flex-col jusify-between font-light">
-    <div className="container font-light flex flex-col flex-grow justify-center  lg:gap-4 xl:gap-5 h-[calc(100dvh_-_300px)] min-h-[420px]">
+    <div className="container font-light flex flex-col flex-grow justify-center  lg:gap-4  h-[calc(100dvh_-_300px)] min-h-[420px]">
         <h1 className="text-synergyBlue font-bold w-[900px] 
          text-[64px] flex mx-auto text-center px-2 ">Empowering Financial Success Together</h1>
          <span className="max-w-[600px] flex mx-auto text-center text-2xl leading-9 my-2">
@@ -20,7 +20,7 @@ function Hero() {
             <span>Get Started</span><FaArrowRight size={16}/></Link>
 
 </div>
-<Image src={moneyBackground} className="object-contain  w-full translate-y-16 " alt="money"/>
+<Image src={moneyBackground} className="object-contain  w-full translate-y-16 -mt-16 " alt="money"/>
 
 {/* Second part of hero */}
 <div className="bg-synergyLightBlue py-16 w-full">
