@@ -15,19 +15,6 @@ module.exports = {
         xl: "4rem",
       },
     },
-    screens: {
-      sm: "640px",
-      // => @media (min-width: 640px) { ... }
-
-      md: "750px",
-      // => @media (min-width: 768px) { ... }
-
-      lg: "1280px",
-      // => @media (min-width: 1280px) { ... }
-
-      xl: "14400px",
-      // => @media (min-width: 1440px) { ... }
-    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

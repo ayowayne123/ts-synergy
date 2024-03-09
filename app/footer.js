@@ -26,9 +26,17 @@ function Footer() {
 
           </Link>
           <span>Address: No 4 Ayinde Street, Ogudu road, Ojota Lagos </span>
-          <span>Phone: +234 (0) 813 663 1392 </span>
-          <span>Email: info @tssynergyconsult.com</span>
-          <ul class="flex flex-row gap-4 mt-2 ">
+          <span>
+            Phone:
+            <a href="tel:+2348136631392">+234 (0) 813 663 1392</a>
+          </span>
+          <span>
+            Email:
+            <a href="mailto:info@tssynergyconsult.com">
+              info@tssynergyconsult.com
+            </a>
+          </span>
+          <ul className="flex flex-row gap-4 mt-2 ">
         <Link href='/' className=''>LinkedIn</Link>
         <Link href='/' className=''>Twitter</Link>
         <Link href='/' className=''>Instagram</Link>

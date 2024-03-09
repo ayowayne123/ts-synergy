@@ -5,10 +5,11 @@ import moneyBackground from "@/public/moneyBackground.svg"
 import Image from "next/image";
 
 
+
 function Hero() {
   return ( 
     <div className="  flex flex-col jusify-between font-light">
-    <div className="container font-light flex flex-col flex-grow justify-end pb-4 gap-3 h-[calc(100dvh_-_200px)] min-h-[450px]">
+    <div className="container font-light flex flex-col flex-grow justify-end pb-4 gap-3 h-[calc(100dvh_-_250px)] min-h-[450px]">
         <h1 className="text-synergyBlue font-bold w-[900px] 
          text-[64px] flex mx-auto text-center px-2 ">Empowering Financial Success Together</h1>
          <span className="w-[600px] flex mx-auto text-center text-2xl leading-9 mt-2">
