@@ -5,6 +5,7 @@ import Header from "./header";
 import Footer from "./footer"
 
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 const blackerSansPro = localFont({
@@ -66,8 +67,8 @@ export const metadata = {
   ogTitle: "TS Synergy Consultancy Service Limited",
   ogDescription: "TS Synergy Consultancy Service Limited is a leading provider of financial consultancy services, dedicated to helping individuals and businesses achieve their financial goals. Explore our tailored solutions driven by integrity and excellence, empowering individuals and businesses to navigate finance with confidence. Our mission is to deliver unparalleled value to our clients by providing comprehensive financial consultancy services tailored to their unique needs and objectives. Our core values of excellence, integrity, innovation, collaboration, and client-centricity drive everything we do, setting the standard for excellence in the financial consultancy industry.",
   ogUrl: "http://www.tssynergyconsult.com/",
-  ogImage: "https://www.example.com/image.jpg",
-  twitterSite: "@tssynergy",
+  ogImage: "../public/og.png",
+  // twitterSite: "@tssynergy",
   type: "website",
   charset: "UTF-8"
 };
