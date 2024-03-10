@@ -9,7 +9,7 @@ import Image from "next/image";
 function Hero() {
   return ( 
     <div className="  flex flex-col jusify-between font-light">
-    <div className="container font-light flex flex-col flex-grow justify-center  lg:gap-4  pt-20 xl:pt-24 lg:h-[calc(100vh_-_300px)] lg:min-h-[480px]">
+    <div className="container font-light flex flex-col flex-grow justify-center  lg:gap-4  pt-20 xl:pt-24 lg:h-[calc(100vh_-_300px)] h-[calc(100vh_-_120px)] md:h-[calc(100vh_-_200px)] min-h-[480px]">
         <h1 className="text-synergyBlue font-bold lg:max-w-[900px] max-w-[340px] md:max-w-[500px]
          lg:text-[64px] text-3xl md:text-5xl flex mx-auto text-center px-2 ">Empowering Financial Success Together</h1>
          <span className="lg:max-w-[600px] max-w-[300px] md:max-w-[470px] flex mx-auto text-center lg:text-2xl md:text-lg text-sm leading-9 my-2">
