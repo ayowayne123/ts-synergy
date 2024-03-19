@@ -1,29 +1,54 @@
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import heroImage from "@/public/heroImage.svg"
-import moneyBackground from "@/public/moneyBackground.svg"
+import smiling from "@/public/smiling.png"
 import Image from "next/image";
 
 
 
 function Hero() {
   return ( 
-    <div className="  flex flex-col jusify-between font-light">
-    <div className="container font-light flex flex-col flex-grow justify-center  lg:gap-4  pt-20 xl:pt-24 lg:h-[calc(100vh_-_300px)] h-[calc(100vh_-_120px)] md:h-[calc(100vh_-_200px)] min-h-[480px]">
+    <div className="  flex flex-col jusify-between font-light overflow-hidden">
+        <div className="relative">
+        <div className="container font-light grid grid-cols-2 relative   pt-10 md:pt-20 xl:pt-24 lg:h-[calc(100vh_-_100px)] h-[calc(100dvh_-_60px)] md:h-[calc(100vh_-_70px)] min-h-[380px] max-h-[1000px] ">
+        <div>
         <h1 className="text-synergyBlue font-bold lg:max-w-[900px] max-w-[340px] md:max-w-[500px]
-         lg:text-[64px] text-3xl md:text-5xl flex mx-auto text-center px-2 ">Empowering Financial Success Together</h1>
-         <span className="lg:max-w-[600px] max-w-[300px] md:max-w-[470px] flex mx-auto text-center lg:text-2xl md:text-lg text-sm leading-9 my-2">
+         lg:text-[64px] text-3xl md:text-5xl flex mx-auto text-left mb-4 ">Empowering Financial Success Together</h1>
+         <span className="py-2 lg:max-w-[630px] max-w-[300px] md:max-w-[470px] flex mx-auto text-left lg:text-2xl md:text-lg text-sm leading-9 my-2">
          We empower your financial success. With expertise, integrity, and innovation, we provide tailored consultancy services. Let&apos;s unlock your potential together.
          </span>
-         <Link href='/' className="bg-synergyBlue mx-auto flex rounded-full items-center justify-between  hover:opacity-70
+         <div className="flex flex-row pt-4 gap-4">
+         <Link href='/services' className="bg-synergyBlue  flex rounded-full items-center justify-between  hover:opacity-70
           text-white lg:w-[270px] md:w-52 w-40 md:h-[60px] h-12 lg:h-[69px] lg:text-lg text-xs md:text-base font-semibold lg:px-6 px-3 ">
             <span>Get Started</span><FaArrowRight size={16}/></Link>
+            <Link href='/engage' className="bg-white border border-black  flex rounded-full items-center justify-between  hover:opacity-70
+          text-black  lg:w-[270px] md:w-52 w-40 md:h-[60px] h-12 lg:h-[69px] lg:text-lg text-xs md:text-base font-semibold lg:px-6 px-3 ">
+            <span>Engage Us</span><FaArrowRight size={16}/></Link>
+         </div>
 
-</div>
-<Image src={moneyBackground} className="object-contain  w-full translate-y-7 -mt-7 lg:translate-y-16 lg:-mt-16 " alt="money"/>
+            </div>
+           
+           
+        
 
+         </div>
+        <div className="absolute w-[700px] h-screen top-0 right-0 -z-10">
+            <div className="relative h-full w-full">
+            <Image src={smiling} className="object-contain h-full  w-full "  alt="people smiling" fill/>
+            </div>
+            
+            </div>
+        </div>
+
+
+<div className="  w-0 h-0 z-20  top-0
+  border-b-[200px] 
+   border-b-synergyLightBlue border-transparent
+  border-l-[100vw] "></div>
 {/* Second part of hero */}
-<div className="bg-synergyLightBlue lg:py-16 py-9 w-full">
+
+<div className="bg-synergyLightBlue lg:py-16 py-9 w-full ">
+
     <div className="container pt-6 grid lg:grid-cols-7 lg:divide-x-[0.5px] g:divide-[#CDCDCD]">
         <div className="lg:col-span-3 flex flex-col justify-between">
            <div>

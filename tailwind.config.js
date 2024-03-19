@@ -15,6 +15,7 @@ module.exports = {
         xl: "2rem",
       },
     },
+    
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -23,7 +24,7 @@ module.exports = {
       },
       colors:{
         synergyBlue : "#1663B5",
-        synergyLightBlue : "#00CF5F12",
+        synergyLightBlue : "#EFF6F2",
         synergyBlack: "#1F1F1F",
       }
     },
