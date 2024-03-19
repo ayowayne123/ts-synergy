@@ -51,7 +51,7 @@ const Info = () => {
     
     return(
 <div className="bg-synergyBlue  text-white font-light relative  ">
-    <div className="container z-30 lg:py-16 py-8 ">
+    <div className="container z-30 lg:py-16 py-8 lg:px-8 ">
     <h2 className="font-semibold lg:w-[450px] mx-auto flex text-[26px] md:text-3xl lg:text-4xl text-center px-3 flex-col">
     <span>Tailored Solutions</span>
     <span>for Your Financial Needs</span>

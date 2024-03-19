@@ -8,9 +8,9 @@ import Image from "next/image";
 
 function Hero() {
   return ( 
-    <div className="  flex flex-col jusify-between font-light overflow-hidden">
+    <div className="  flex flex-col jusify-between font-light overflow-hidden ">
         <div className="relative">
-        <div className="container font-light grid grid-cols-2 relative   pt-10 md:pt-20 xl:pt-24 lg:h-[calc(100vh_-_100px)] h-[calc(100dvh_-_60px)] md:h-[calc(100vh_-_70px)] min-h-[380px] max-h-[1000px] ">
+        <div className="container px-8 font-light grid grid-cols-2 relative   pt-10 md:pt-20 xl:pt-24 lg:h-[calc(100vh_-_100px)] h-[calc(100dvh_-_60px)] md:h-[calc(100vh_-_70px)] min-h-[380px] max-h-[1000px] ">
         <div>
         <h1 className="text-synergyBlue font-bold lg:max-w-[900px] max-w-[340px] md:max-w-[500px]
          lg:text-[64px] text-3xl md:text-5xl flex mx-auto text-left mb-4 ">Empowering Financial Success Together</h1>
@@ -19,10 +19,10 @@ function Hero() {
          </span>
          <div className="flex flex-row pt-4 gap-4">
          <Link href='/services' className="bg-synergyBlue  flex rounded-full items-center justify-between  hover:opacity-70
-          text-white lg:w-[270px] md:w-52 w-40 md:h-[60px] h-12 lg:h-[69px] lg:text-lg text-xs md:text-base font-semibold lg:px-6 px-3 ">
-            <span>Get Started</span><FaArrowRight size={16}/></Link>
+          text-white lg:w-[230px] md:w-52 w-40 md:h-[60px] h-12 lg:h-[69px] lg:text-lg text-xs md:text-base font-semibold lg:px-6 px-3 ">
+            <span>Learn More</span><FaArrowRight size={16}/></Link>
             <Link href='/engage' className="bg-white border border-black  flex rounded-full items-center justify-between  hover:opacity-70
-          text-black  lg:w-[270px] md:w-52 w-40 md:h-[60px] h-12 lg:h-[69px] lg:text-lg text-xs md:text-base font-semibold lg:px-6 px-3 ">
+          text-black  lg:w-[230px] md:w-52 w-40 md:h-[60px] h-12 lg:h-[69px] lg:text-lg text-xs md:text-base font-semibold lg:px-6 px-3 ">
             <span>Engage Us</span><FaArrowRight size={16}/></Link>
          </div>
 
@@ -49,7 +49,7 @@ function Hero() {
 
 <div className="bg-synergyLightBlue lg:py-16 py-9 w-full ">
 
-    <div className="container pt-6 grid lg:grid-cols-7 lg:divide-x-[0.5px] g:divide-[#CDCDCD]">
+    <div className="container pt-6 grid lg:grid-cols-7 lg:divide-x-[0.5px] g:divide-[#CDCDCD] lg:px-8">
         <div className="lg:col-span-3 flex flex-col justify-between">
            <div>
             <h2 className="text-synergyBlue font-semibold text-2xl lg:text-3xl">Our Essence</h2>

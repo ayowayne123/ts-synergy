@@ -5,7 +5,7 @@ import NewsLetter from "./newsLetter";
 
 export default function Home() {
   return (
-    <main className="">
+  <main className="">
      <Hero/>
      <Info/>
      <NewsLetter/>

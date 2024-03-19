@@ -11,7 +11,7 @@ function Header() {
   
     return (
       <header className="bg-white w-full h-20 lg:h-24 text-black container ">
-        <div className="h-full flex flex-row items-center justify-between  ">
+        <div className="h-full flex flex-row items-center justify-between px-8 ">
           <Link
             href="/"
             className="h-full relative flex flex-row items-center gap-3"
@@ -23,6 +23,7 @@ function Header() {
                 style={{ objectFit: "contain" }}
                 fill
                 sizes="max-width: 767px) 100vw, "
+                className="object-left"
               />
             </div>
 
