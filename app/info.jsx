@@ -78,7 +78,7 @@ const Info = () => {
           Experience our expertise and innovation to unlock your financial potential.</p>
              
             
-                <div  className="grid gap-6 lg:grid-flow-col   lg:py-16 py-8  z-20  overflow-x-scroll no-scrollbar">
+                <div  className="grid gap-6 lg:grid-flow-col md:grid-cols-2 lg:grid-cols-none  lg:py-16 py-8  z-20  overflow-x-scroll no-scrollbar">
              {cardData.map((card, index) => (
                 <Card card={card} key={index}/>
                 ))}
