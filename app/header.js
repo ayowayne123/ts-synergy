@@ -79,14 +79,14 @@ function Header() {
           </div>
 
         </div>
-        <div className="border-b-[0.5px] border-synergyBlack w-full lg:flex hidden"></div>
+        <div className="border-b-[0.5px] border-synergyBlack w-full lg:flex hidden container"></div>
         <div className={`absolute w-full transition-transform duration-500 ease-in-out bg-[#d0e0f0] h-96 inset-0 lg:hidden z-30 flex ${!openMenu ? "-translate-y-96" : ""}`}>
           
-<div className="w-60 h-full flex mx-auto items-center justify-center relative">
-<div className="absolute top-[40px] -right-12">
+<div className="w-full h-full flex mx-auto items-center justify-center relative">
+<div className="absolute top-[40px] right-12">
             <LiaTimesSolid size={24} onClick={handleMenuClose}/>
             </div>
-<nav className="flex flex-col  font-semibold divide-y divide-black  justify-center gap-5 w-full">
+<nav className="flex flex-col  font-semibold divide-y divide-black  justify-center gap-5 w-60">
             <Link onClick={handleMenuClose}
               href="/"
               className={`cursor-pointer text-center pt-5  ${pathname == "/" ? "text-synergyBlue font-bold" : ""}`}
