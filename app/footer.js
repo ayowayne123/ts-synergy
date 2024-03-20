@@ -6,7 +6,7 @@ import Image from "next/image";
 function Footer() {
   return (
     <footer className='bg-synergyBlue pb-10'>
-        <div className='container text-white font-light text-lg lg:px-8'>
+        <div className='container text-white font-light text-lg lg:px-8 px-5'>
             <div className='flex lg:flex-row py-16 flex-col  justify-between'>
             <div className='flex flex-col gap-2'>
             <Link
@@ -61,29 +61,23 @@ function Footer() {
             </Link>
             <Link href='/careers'  className= {`cursor-pointer `}>Careers</Link>
             <Link
-              href="/about"
+              href="/engage"
               className={`cursor-pointer `}
     
             >
-              About us
+              Engage us
             </Link>
-            <Link
-              href="/contact"
-              className={`cursor-pointer `}
-    
-            >
-              Contact us
-            </Link>
+           
 
        
             </nav>
             </div>
            
             <div className="border-b-[0.5px] border-white w-full"></div>
-            <div className='flex flex-row justify-between text-base  py-8'>
+            <div className='flex lg:flex-row flex-col gap-4 justify-between text-base  py-8'>
             <div>&copy; 2024 TS Synergy Consultancy Service Limited. All Rights Reserved.</div>
             <div className='divide-x divide-white  '>
-            <Link href="/privacy-policy" className={`cursor-pointer px-2 `}>
+            <Link href="/privacy-policy" className={`cursor-pointer pr-2 `}>
               Privacy Policy
             </Link>
             <Link href="/terms-of-service" className={`cursor-pointer px-2 `}>

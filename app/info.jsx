@@ -36,7 +36,7 @@ const cardData = [
 
   const Card = ({ card }) => {
     return (
-      <div className="text-black z-20 bg-white rounded-[20px] overflow-hidden w-[328px] pt-[128px] relative h-[454px] flex flex-col transform  ease-in-out transition-transform delay-75 duration-500 lg:hover:-translate-y-10">
+      <div className="text-black z-20 mx-auto bg-white rounded-[20px] overflow-hidden w-[328px] pt-[128px] relative h-[454px] flex flex-col transform  ease-in-out transition-transform delay-75 duration-500 lg:hover:-translate-y-10">
         <div className="absolute inset-0">
           <div className="w-[328px] h-[168px] relative z-10">
             <Image src={card.image} className="object-cover h-full w-full" alt={`${card.title}`} fill placeholder="blur" loading="lazy" />
@@ -78,7 +78,7 @@ const Info = () => {
           Experience our expertise and innovation to unlock your financial potential.</p>
              
             
-                <div  className="grid gap-6 lg:grid-flow-col  lg:py-16 py-8  z-20  overflow-x-scroll no-scrollbar">
+                <div  className="grid gap-6 lg:grid-flow-col   lg:py-16 py-8  z-20  overflow-x-scroll no-scrollbar">
              {cardData.map((card, index) => (
                 <Card card={card} key={index}/>
                 ))}
