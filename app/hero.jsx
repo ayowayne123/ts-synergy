@@ -34,7 +34,8 @@ function Hero() {
          </div>
         <div className="absolute w-[700px] h-screen top-0 right-0 -z-10">
             <div className="relative h-full w-full">
-            <Image src={smiling} className="object-contain h-full  w-full "  alt="people smiling" fill/>
+            <Image src={smiling} className="object-contain h-full  w-full "  alt="people smiling" fill priority 
+            sizes="(max-width: 768px) 100vw, (max-width: 50vw" placeholder="blur"/>
             </div>
             
             </div>

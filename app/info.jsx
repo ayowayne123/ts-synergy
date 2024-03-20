@@ -39,7 +39,7 @@ const cardData = [
       <div className="text-black z-20 bg-white rounded-[20px] overflow-hidden w-[328px] pt-[128px] relative h-[454px] flex flex-col transform  ease-in-out transition-transform delay-75 duration-500 lg:hover:-translate-y-10">
         <div className="absolute inset-0">
           <div className="w-[328px] h-[168px] relative z-10">
-            <Image src={card.image} className="object-cover h-full w-full" alt={`${card.title}`} fill />
+            <Image src={card.image} className="object-cover h-full w-full" alt={`${card.title}`} fill placeholder="blur" loading="lazy" />
           </div>
         </div>
   
