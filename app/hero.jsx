@@ -17,7 +17,7 @@ function Hero() {
          <span className="py-2 lg:py-3 lg:max-w-[630px] max-w-[281px] md:max-w-[470px] flex mx-auto text-center md:text-left lg:text-2xl md:text-lg text-sm lg:leading-9 lg:my-2 my-1">
          We empower your financial success. With expertise, integrity, and innovation, we provide tailored consultancy services. Let&apos;s unlock your potential together.
          </span>
-         <div className="flex md:flex-row flex-col pt-6 lg:gap-4 gap-6">
+         <div className="flex md:flex-row flex-col pt-6 lg:gap-4 gap-6 z-30">
          <Link href='/services' className="bg-synergyBlue  flex rounded-full items-center justify-between  hover:opacity-70
           text-white lg:w-[230px] md:w-40 w-[135px] md:h-[60px] h-12 lg:h-[69px] lg:text-lg text-xs md:text-base font-semibold px-4 lg:px-6  ">
             <span>Learn More</span><FaArrowRight size={16}/></Link>
