@@ -9,20 +9,20 @@ import Image from "next/image";
 function Hero() {
   return ( 
     <div className="  flex flex-col jusify-between font-light overflow-hidden ">
-        <div className="relative lg:max-h-[1000px]">
-        <div className="container px-5  lg:px-8 font-light grid lg:grid-cols-2 relative items-center    pt-10 md:pt-20 xl:pt-24 lg:h-[calc(100vh_-_100px)] md:h-[calc(100vh_-_70px)] min-h-[380px] max-h-[840px] ">
-        <div className="w-full flex items-center lg:items-start flex-col"> 
-        <h1 className="text-synergyBlue font-bold lg:max-w-[900px] max-w-[261px] md:max-w-[500px] lg:px-0 px-2
-         lg:text-[64px] text-3xl md:text-5xl flex mx-auto text-center lg:text-left lg:mb-6 mb-2 lg:mt-0 mt-8 ">Empowering Financial Success Together</h1>
-         <span className="py-2 lg:py-3 lg:max-w-[630px] max-w-[281px] md:max-w-[470px] flex mx-auto text-center lg:text-left lg:text-2xl md:text-lg text-sm lg:leading-9 lg:my-2 my-1">
+        <div className="relative lg:max-h-[1000px] md:max-h-[800px]">
+        <div className="container px-5  lg:px-8 font-light grid md:grid-cols-2 relative items-center    pt-10 md:pt-16 lg:pt-20 xl:pt-24 lg:h-[calc(100vh_-_100px)] md:h-[calc(100vh_-_200px)] min-h-[380px] max-h-[840px] ">
+        <div className="w-full flex items-center md:items-start flex-col"> 
+        <h1 className="text-synergyBlue font-bold lg:max-w-[900px] max-w-[261px] md:max-w-[600px] md:px-0 px-2
+         lg:text-6xl text-3xl md:text-4xl flex mx-auto text-center md:text-left lg:mb-6 mb-2 lg:mt-0 mt-8 md:mt-4 ">Empowering Financial Success Together</h1>
+         <span className="py-2 lg:py-3 lg:max-w-[630px] max-w-[281px] md:max-w-[470px] flex mx-auto text-center md:text-left lg:text-2xl md:text-lg text-sm lg:leading-9 lg:my-2 my-1">
          We empower your financial success. With expertise, integrity, and innovation, we provide tailored consultancy services. Let&apos;s unlock your potential together.
          </span>
          <div className="flex md:flex-row flex-col pt-6 lg:gap-4 gap-6">
          <Link href='/services' className="bg-synergyBlue  flex rounded-full items-center justify-between  hover:opacity-70
-          text-white lg:w-[230px] md:w-52 w-[135px] md:h-[60px] h-12 lg:h-[69px] lg:text-lg text-xs md:text-base font-semibold px-4 lg:px-6  ">
+          text-white lg:w-[230px] md:w-40 w-[135px] md:h-[60px] h-12 lg:h-[69px] lg:text-lg text-xs md:text-base font-semibold px-4 lg:px-6  ">
             <span>Learn More</span><FaArrowRight size={16}/></Link>
             <Link href='/engage' className="bg-white border border-black  flex rounded-full items-center justify-between  hover:opacity-70
-          text-black  lg:w-[230px] md:w-52 w-[135px] md:h-[60px] h-12 lg:h-[69px] lg:text-lg text-xs md:text-base font-semibold px-4 lg:px-6  ">
+          text-black  lg:w-[230px] md:w-40 w-[135px] md:h-[60px] h-12 lg:h-[69px] lg:text-lg text-xs md:text-base font-semibold px-4 lg:px-6  ">
             <span>Engage Us</span><FaArrowRight size={16}/></Link>
          </div>
 
@@ -32,15 +32,15 @@ function Hero() {
         
 
          </div>
-        <div className="lg:absolute lg:w-[700px] w-full h-screen hidden lg:flex overflow-hidden top-0 right-0 -z-10">
+        <div className="md:absolute lg:w-[700px] md:w-[450px] w-full h-screen hidden md:flex overflow-hidden top-0 right-0 -z-10">
             <div className="relative h-full w-full ">
-            <Image src={smiling} className="object-contain h-full  w-full "  alt="people smiling" fill priority 
+            <Image src={smiling} className="object-contain h-full  w-full md:object-right lg:object-center "  alt="people smiling" fill priority 
             sizes="(max-width: 768px) 100vw, (max-width: 50vw" />
             </div>
             
             </div>
-            <div className="h-[320px] relative lg:hidden -translate-y-12 ">
-            <div className=" absolute translate-y-8 w-full  lg:hidden block h-[400px] overflow-hidden top-0 right-0 -z-10">
+            <div className="h-[320px] relative md:hidden -translate-y-12 ">
+            <div className=" absolute translate-y-8 w-full  md:hidden block h-[400px] overflow-hidden top-0 right-0 -z-10">
             <div className="relative h-[481px] w-full ">
             <Image src={smiling} className="object-contain h-full  w-full "  alt="people smiling" fill priority 
             sizes="(max-width: 768px) 100vw, (max-width: 50vw" />
