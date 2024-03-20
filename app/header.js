@@ -47,23 +47,15 @@ function Header() {
             </Link>
             <Link href='/careers'  className= {`cursor-pointer ${pathname.includes('/careers') ? "text-synergyBlue font-normal " : ""}`}>Careers</Link>
             <Link
-              href="/about"
+              href="/engage"
               className={`cursor-pointer ${
-                pathname.includes("/about") ? "text-synergyBlue font-normal" : ""
+                pathname.includes("/engage") ? "text-synergyBlue font-normal" : ""
               }`}
     
             >
-              About us
+              Engage us
             </Link>
-            <Link
-              href="/contact"
-              className={`cursor-pointer ${
-                pathname.includes("/contact") ? "text-synergyBlue font-normal" : ""
-              }`}
-    
-            >
-              Contact us
-            </Link>
+          
 
           </nav>
 
