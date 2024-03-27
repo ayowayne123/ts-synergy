@@ -53,7 +53,7 @@ export const metadata = {
   
   
         <div className="  flex flex-col  justify-between  h-full grow-0 lg:py-7 py-3">
-          <p className="lg:text-xl md:text-lg  lg:pr-12">{card.description}</p>
+          <p className="lg:text-xl md:text-lg  lg:pr-12 pb-5 md:pb-2">{card.description}</p>
 <Link href='/engage' className="font-medium border-b border-black px-2 py-1 w-max hover:text-synergyBlue hover:border-synergyBlue ">Engage Us</Link>
           </div>
 
