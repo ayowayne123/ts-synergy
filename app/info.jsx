@@ -51,7 +51,7 @@ const cardData = [
           <p className="text-sm">{card.description}</p>
           </div>
 
-<Link href='/engage' className="font-medium border-b border-black px-2 py-1 w-max z-20 hover:bg-synergyBlue hover:border-synergyBlue">Engage Us</Link>
+<Link href='/engage' className="font-medium border-b border-black px-2 py-1 w-max z-20 hover:text-synergyBlue hover:border-synergyBlue">Engage Us</Link>
         </div>
       </div>
     );
