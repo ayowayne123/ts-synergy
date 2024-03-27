@@ -7,7 +7,7 @@ function TitleHeader({ parentClass, children }) {
   return (
     <div className={`w-full relative overflow-hidden ${parentClass}`}>
         {children}
-        <div className="absolute lg:-bottom-20 -bottom-7 left-0 right-0 z-0">
+        <div className="absolute lg:-bottom-20 -bottom-7  md:-bottom-12 left-0 right-0 z-0 mix-blend-multiply">
         <Image src={mask} 
     className="object-contain w-full object-bottom z-0" alt="bg"/>
 </div>
