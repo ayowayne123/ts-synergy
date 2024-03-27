@@ -36,7 +36,7 @@ const cardData = [
 
   const Card = ({ card }) => {
     return (
-      <div className="text-black z-20 mx-auto bg-white rounded-[20px] overflow-hidden w-[328px] pt-[128px] relative h-[454px] flex flex-col transform  ease-in-out transition-transform delay-75 duration-500 lg:hover:-translate-y-10">
+      <div className="text-black z-20 mx-auto bg-white rounded-[20px] overflow-hidden w-[328px] pt-[128px] relative h-[454px] flex flex-col transform  ease-in-out transition-transform delay-75 duration-500 lg:hover:-translate-y-10 my-2">
         <div className="absolute inset-0">
           <div className="w-[328px] h-[168px] relative z-10">
             <Image src={card.image} className="object-cover h-full w-full" alt={`${card.title}`} fill placeholder="blur" loading="lazy" />
@@ -51,7 +51,7 @@ const cardData = [
           <p className="text-sm">{card.description}</p>
           </div>
 
-<Link href='/engage' className="font-medium border-b border-black px-2 py-1 w-max z-20">Engage Us</Link>
+<Link href='/engage' className="font-medium border-b border-black px-2 py-1 w-max z-20 hover:bg-synergyBlue hover:border-synergyBlue">Engage Us</Link>
         </div>
       </div>
     );
@@ -69,7 +69,7 @@ const Info = () => {
     
     return(
 <div className="bg-synergyBlue  text-white font-light relative  ">
-    <div className="container z-20 lg:py-16 py-8 lg:px-8 ">
+    <div className="container z-20 lg:py-16 py-8  ">
     <h2 className="font-semibold lg:w-[450px] mx-auto flex text-[26px] md:text-3xl lg:text-4xl text-center px-3 flex-col">
     <span>Tailored Solutions</span>
     <span>for Your Financial Needs</span>
@@ -78,7 +78,7 @@ const Info = () => {
           Experience our expertise and innovation to unlock your financial potential.</p>
              
             
-                <div  className="grid gap-6 lg:grid-flow-col md:grid-cols-2 lg:grid-cols-none  lg:py-16 py-8  z-20  overflow-x-scroll no-scrollbar">
+                <div  className="grid gap-y-8 gap-x-6 lg:grid-flow-col md:grid-cols-2 lg:grid-cols-none  lg:py-16 py-8  z-20  overflow-x-scroll no-scrollbar">
              {cardData.map((card, index) => (
                 <Card card={card} key={index}/>
                 ))}

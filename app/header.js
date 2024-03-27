@@ -26,7 +26,7 @@ function Header() {
   
     return (
       <header className="bg-white w-full h-20 lg:h-24 text-black  relative">
-        <div className="h-full flex flex-row items-center justify-between lg:px-8 px-5 container">
+        <div className="h-full flex flex-row items-center justify-between  container">
           <Link
             href="/"
             className="h-full relative flex flex-row items-center gap-3"

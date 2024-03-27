@@ -6,7 +6,7 @@ import Image from "next/image";
 function Footer() {
   return (
     <footer className='bg-synergyBlue pb-10'>
-        <div className='container text-white font-light text-lg lg:px-8 px-5'>
+        <div className='container text-white font-light text-lg '>
             <div className='flex lg:flex-row py-16 flex-col  justify-between'>
             <div className='flex flex-col gap-2'>
             <Link

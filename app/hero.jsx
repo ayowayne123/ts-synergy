@@ -10,14 +10,14 @@ function Hero() {
   return ( 
     <div className="  flex flex-col jusify-between font-light overflow-hidden ">
         <div className="relative lg:max-h-[1000px] md:max-h-[800px]">
-        <div className="container px-5  lg:px-8 font-light grid md:grid-cols-2 relative items-center    pt-10 md:pt-16 lg:pt-20 xl:pt-24 lg:h-[calc(100vh_-_100px)] md:h-[calc(100vh_-_200px)] min-h-[380px] max-h-[840px] ">
+        <div className="container  font-light grid md:grid-cols-2 relative items-center    pt-10 md:pt-16 lg:pt-20 xl:pt-24 lg:h-[calc(100vh_-_100px)] md:h-[calc(100vh_-_200px)] min-h-[380px] max-h-[840px] ">
         <div className="w-full flex items-center md:items-start flex-col"> 
         <h1 className="text-synergyBlue font-bold lg:max-w-[900px] max-w-[261px] md:max-w-[600px] md:px-0 px-2
          lg:text-6xl text-3xl md:text-4xl flex mx-auto text-center md:text-left lg:mb-6 mb-2 lg:mt-0 mt-8 md:mt-4 ">Empowering Financial Success Together</h1>
          <span className="py-2 lg:py-3 lg:max-w-[630px] max-w-[281px] md:max-w-[470px] flex mx-auto text-center md:text-left lg:text-2xl md:text-lg text-sm lg:leading-9 lg:my-2 my-1">
          We empower your financial success. With expertise, integrity, and innovation, we provide tailored consultancy services. Let&apos;s unlock your potential together.
          </span>
-         <div className="flex md:flex-row flex-col pt-6 lg:gap-4 gap-6 z-30">
+         <div className="flex lg:flex-row flex-col pt-6 lg:gap-4 gap-6 z-30">
          <Link href='/services' className="bg-synergyBlue  flex rounded-full items-center justify-between  hover:opacity-70
           text-white lg:w-[230px] md:w-40 w-[135px] md:h-[60px] h-12 lg:h-[69px] lg:text-lg text-xs md:text-base font-semibold px-4 lg:px-6  ">
             <span>Learn More</span><FaArrowRight size={16}/></Link>
@@ -61,10 +61,10 @@ function Hero() {
 
 <div className="bg-synergyLightBlue lg:py-16 py-9 w-full ">
 
-    <div className="container pt-6  lg:px-8 px-5">
+    <div className="container pt-6  ">
         <div className=" flex flex-col items-center ">
            <div>
-            <h2 className="text-synergyBlue font-semibold text-2xl lg:text-4xl text-left  lg:text-center">Our Essence</h2>
+            <h2 className="text-synergyBlue font-semibold text-[26px] lg:text-4xl text-left  lg:text-center">Our Essence</h2>
             <p className="lg:max-w-[745px] lg:text-center text-left flex lg:text-xl  lg:px-0 pb-6 lg:pb-0">Explore our tailored solutions driven by integrity and excellence, 
                 empowering individuals and businesses to navigate finance with confidence.</p>
             </div> 

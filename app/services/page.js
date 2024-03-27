@@ -39,7 +39,7 @@ export const metadata = {
   const Card = ({ card }) => {
     return (
       <div>
-            <h1 className="font-semibold text-xl md:text-2xl lg:text-3xl mb-4 capitalize text-synergyBlack ">{card.title}</h1>
+            <h2 className="font-semibold text-xl md:text-2xl lg:text-3xl mb-4 capitalize text-synergyBlack ">{card.title}</h2>
             <div className="border-b-[0.5px] border-synergyBlack w-full md:flex hidden "></div>
       <div className="text-synergyBlack z-20  grid md:grid-flow-col lg:gap-8 md:gap-4 w-full font-light mt-7">
        
@@ -66,16 +66,16 @@ export const metadata = {
 function ServicesPage() {
   return (
     <div className='bg-synergyLightBlue'>
-        <TitleHeader parentClass="h-[520px] bg-synergyBlue text-white ">
+        <TitleHeader parentClass="lg:h-[520px] h-[480px] bg-synergyBlue text-white ">
             <div className='flex flex-col h-full items-center justify-center gap-5'>
                 <h1 className='lg:text-5xl md:text-3xl text-3xl font-bold lg:w-[600px] md:w-[450px] w-[250px] text-center'>Tailored Solutions
 for Your Financial Needs</h1>
-<p className='font-light lg:text-2xl md:text-xl text-lg md:w-[690px] lg:w-[880px] max-w-[400px] px-4 text-center'>We provide tailored financial services including tax consultation, accounting, financial planning, and business advisory. Experience our expertise and innovation to unlock your financial potential.</p>
+<p className='font-light lg:text-2xl md:text-xl text-lg md:w-[690px] lg:w-[880px] sm:max-w-[400px] px-4 text-center'>We provide tailored financial services including tax consultation, accounting, financial planning, and business advisory. Experience our expertise and innovation to unlock your financial potential.</p>
 
             </div>
         </TitleHeader>
-        <div className='container py-16 lg:px-10 md:px-6 px-4'> 
-        <div  className="flex flex-col gap-8 ">
+        <div className='container py-16 '> 
+        <div  className="flex flex-col gap-10 ">
              {cardData.map((card, index) => (
                 <Card card={card} key={index}/>
                 ))}
