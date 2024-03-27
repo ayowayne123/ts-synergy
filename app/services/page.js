@@ -70,7 +70,7 @@ function ServicesPage() {
             <div className='flex flex-col h-full items-center justify-center gap-5'>
                 <h1 className='lg:text-5xl md:text-3xl text-3xl font-bold lg:w-[600px] md:w-[450px] w-[250px] text-center'>Tailored Solutions
 for Your Financial Needs</h1>
-<p className='font-light lg:text-2xl md:text-xl text-lg md:w-[690px] lg:w-[880px] max-w-[400px] px-4 text-center'>We provide tailored financial services including tax consultation, accounting, financial planning, and business advisory. Experience our expertise and innovation to unlock your financial potential.</p>
+<p className='font-light lg:text-2xl md:text-xl text-lg md:w-[690px] lg:w-[880px] sm:max-w-[400px] px-4 text-center'>We provide tailored financial services including tax consultation, accounting, financial planning, and business advisory. Experience our expertise and innovation to unlock your financial potential.</p>
 
             </div>
         </TitleHeader>
