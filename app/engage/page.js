@@ -23,7 +23,7 @@ function EngagePage() {
               <div className='flex flex-col mt-6'>
                 <textarea id='message' name='message' placeholder='Message' rows='4' className='mt-2 placeholder:text-white border border-white bg-transparent rounded-xl py-3 px-4  md:text-lg text-xs lg:text-xl font-medium text-white focus:outline-none focus:border-blue-600'></textarea>
               </div>
-              <button type='submit' className='mt-6 bg-white text-black py-3 px-4 rounded-xl lg:w-32 w-24  md:text-lg text-xs lg:text-xl font-medium hover:bg-synergyBlue transition-colors duration-300'>Send</button>
+              <button type='submit' className='mt-6 bg-white text-black py-4 px-4 rounded-xl lg:w-32 w-24  md:text-lg text-xs lg:text-xl font-medium hover:bg-synergyBlue transition-colors duration-300'>Send</button>
             </form>
             </div>
 

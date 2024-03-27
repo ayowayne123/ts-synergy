@@ -75,7 +75,7 @@ for Your Financial Needs</h1>
             </div>
         </TitleHeader>
         <div className='container py-16 '> 
-        <div  className="flex flex-col gap-8 ">
+        <div  className="flex flex-col gap-10 ">
              {cardData.map((card, index) => (
                 <Card card={card} key={index}/>
                 ))}
