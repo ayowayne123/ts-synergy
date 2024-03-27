@@ -61,10 +61,10 @@ function Hero() {
 
 <div className="bg-synergyLightBlue lg:py-16 py-9 w-full ">
 
-    <div className="container pt-6  lg:px-8 px-5">
+    <div className="container pt-6  ">
         <div className=" flex flex-col items-center ">
            <div>
-            <h2 className="text-synergyBlue font-semibold text-2xl lg:text-4xl text-left  lg:text-center">Our Essence</h2>
+            <h2 className="text-synergyBlue font-semibold text-[26px] lg:text-4xl text-left  lg:text-center">Our Essence</h2>
             <p className="lg:max-w-[745px] lg:text-center text-left flex lg:text-xl  lg:px-0 pb-6 lg:pb-0">Explore our tailored solutions driven by integrity and excellence, 
                 empowering individuals and businesses to navigate finance with confidence.</p>
             </div> 
