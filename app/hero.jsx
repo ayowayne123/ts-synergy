@@ -13,7 +13,12 @@ import 'aos/dist/aos.css';
 function Hero() {
     const [textIndex, setTextIndex] = useState(0);
   const texts = ["Success", "Growth", "Stability"];
-  AOS.init();
+ 
+  useEffect(() => {
+    AOS.init(
+      
+    );
+  }, [])
 
   useEffect(() => {
     const intervalId = setInterval(() => {
