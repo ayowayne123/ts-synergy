@@ -32,7 +32,7 @@ function Hero() {
         <div className="relative lg:max-h-[1000px] md:max-h-[800px]">
         <div className="container  font-light grid md:grid-cols-2 relative items-center    pt-10 md:pt-16 lg:pt-20 xl:pt-24 lg:h-[calc(100vh_-_100px)] md:h-[calc(100vh_-_200px)] min-h-[380px] max-h-[840px] ">
         <div className="w-full flex items-center md:items-start flex-col"> 
-        <div className="text-synergyBlue font-bold lg:max-w-[900px] max-w-[261px] md:max-w-[600px] md:px-0 px-2
+        <div className="text-synergyBlue font-bold lg:max-w-[900px] max-w-[280px] md:max-w-[600px] md:px-0 px-2
          lg:text-6xl text-3xl md:text-4xl  mx-auto text-center md:text-left lg:mb-6 mb-2 lg:mt-0 mt-8 md:mt-4  ">Empowering Financial <span className="text-synergyBlack hero-text">{texts[textIndex]}</span> Together</div>
          <span className="py-2 lg:py-3 lg:max-w-[630px] max-w-[281px] md:max-w-[470px] flex mx-auto text-center md:text-left lg:text-2xl md:text-lg text-sm lg:leading-9 lg:my-2 my-1">
          We empower your financial success. With expertise, integrity, and innovation, we provide tailored consultancy services. Let&apos;s unlock your potential together.
