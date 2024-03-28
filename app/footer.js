@@ -28,7 +28,7 @@ function Footer() {
           <span>Address: No 4 Ayinde Street, Ogudu road, Ojota Lagos </span>
           <span>
             Phone:
-            <a href="tel:+2348136631392">+234 (0) 813 663 1392</a>
+            <a href="tel:+2347086431963">+234 (0) 708 643 1963</a>
           </span>
           <span>
             Email:

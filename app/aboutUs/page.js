@@ -1,5 +1,6 @@
 import React from 'react'
 import TitleHeader from '@/components/titleHeader'
+import Team from './team';
 
 export const metadata = {
     title: "About Us | TS Synergy Consultancy Service Limited", 
@@ -17,7 +18,7 @@ function AboutUs() {
     <section className='container py-8 font-light   '>
     <h1 className="font-semibold text-xl md:text-2xl lg:text-3xl mb-4 capitalize text-synergyBlack ">Who we are</h1>
             <div className="border-b-[0.5px] border-synergyBlack w-full md:flex hidden "></div>
-            <div className='py-4 grid md:grid-cols-2 lg:gap-10 lg:text-xl md:text-lg leading-10'>
+            <div className='py-8 grid md:grid-cols-2 lg:gap-10 lg:text-xl md:text-lg leading-10'>
                 <div className='whitespace-pre-wrap flex flex-col gap-2'>
             <p>Welcome to TS Synergy Consultancy Service Limited, where our story is rooted in a passion for financial excellence and innovation. Established with a vision to empower individuals and businesses with comprehensive financial solutions, we have become a trusted partner in navigating the complexities of the financial landscape.
             </p>
@@ -36,6 +37,7 @@ function AboutUs() {
             </div>
  
     </section>
+    <Team/>
     </div>
   )
 }

@@ -1,27 +1,50 @@
+"use client"
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import heroImage from "@/public/heroImage.svg"
 import smiling from "@/public/smiling.png"
 import Image from "next/image";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 
 
 function Hero() {
+    const [textIndex, setTextIndex] = useState(0);
+  const texts = ["Success", "Growth", "Stability"];
+  AOS.init();
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
+    }, 3000); // Change text every 3 seconds
+
+    return () => clearInterval(intervalId);
+  }, []);
   return ( 
     <div className="  flex flex-col jusify-between font-light overflow-hidden ">
         <div className="relative lg:max-h-[1000px] md:max-h-[800px]">
         <div className="container  font-light grid md:grid-cols-2 relative items-center    pt-10 md:pt-16 lg:pt-20 xl:pt-24 lg:h-[calc(100vh_-_100px)] md:h-[calc(100vh_-_200px)] min-h-[380px] max-h-[840px] ">
         <div className="w-full flex items-center md:items-start flex-col"> 
-        <h1 className="text-synergyBlue font-bold lg:max-w-[900px] max-w-[261px] md:max-w-[600px] md:px-0 px-2
-         lg:text-6xl text-3xl md:text-4xl flex mx-auto text-center md:text-left lg:mb-6 mb-2 lg:mt-0 mt-8 md:mt-4 ">Empowering Financial Success Together</h1>
+        <div className="text-synergyBlue font-bold lg:max-w-[900px] max-w-[261px] md:max-w-[600px] md:px-0 px-2
+         lg:text-6xl text-3xl md:text-4xl  mx-auto text-center md:text-left lg:mb-6 mb-2 lg:mt-0 mt-8 md:mt-4  ">Empowering Financial <span className="text-synergyBlack hero-text">{texts[textIndex]}</span> Together</div>
          <span className="py-2 lg:py-3 lg:max-w-[630px] max-w-[281px] md:max-w-[470px] flex mx-auto text-center md:text-left lg:text-2xl md:text-lg text-sm lg:leading-9 lg:my-2 my-1">
          We empower your financial success. With expertise, integrity, and innovation, we provide tailored consultancy services. Let&apos;s unlock your potential together.
          </span>
          <div className="flex lg:flex-row flex-col pt-6 lg:gap-4 gap-6 z-30">
-         <Link href='/services' className="bg-synergyBlue  flex rounded-full items-center justify-between  hover:opacity-70
+          {/* on smaller devices */}
+         <Link href='/services' className="bg-synergyBlue  flex lg:hidden rounded-full items-center justify-center  hover:opacity-70
+          text-white lg:w-[230px] md:w-40 w-[135px] md:h-[60px] h-12 lg:h-[69px] lg:text-lg text-xs md:text-base font-semibold px-4 lg:px-6  ">
+            <span>Learn More</span></Link>
+            <Link href='/engage' className="bg-white border border-black  flex lg:hidden rounded-full items-center justify-center  hover:opacity-70
+          text-black  lg:w-[230px] md:w-40 w-[135px] md:h-[60px] h-12 lg:h-[69px] lg:text-lg text-xs md:text-base font-semibold px-4 lg:px-6  ">
+            <span>Engage Us</span></Link>
+            {/* on laptops */}
+            <Link href='/services' className="bg-synergyBlue  hidden lg:flex rounded-full items-center justify-between  hover:opacity-70
           text-white lg:w-[230px] md:w-40 w-[135px] md:h-[60px] h-12 lg:h-[69px] lg:text-lg text-xs md:text-base font-semibold px-4 lg:px-6  ">
             <span>Learn More</span><FaArrowRight size={16}/></Link>
-            <Link href='/engage' className="bg-white border border-black  flex rounded-full items-center justify-between  hover:opacity-70
+            <Link href='/engage' className="bg-white border border-black  hidden lg:flex rounded-full items-center justify-between  hover:opacity-70
           text-black  lg:w-[230px] md:w-40 w-[135px] md:h-[60px] h-12 lg:h-[69px] lg:text-lg text-xs md:text-base font-semibold px-4 lg:px-6  ">
             <span>Engage Us</span><FaArrowRight size={16}/></Link>
          </div>
@@ -33,7 +56,9 @@ function Hero() {
 
          </div>
         <div className="md:absolute lg:w-[700px] md:w-[450px] w-full h-screen hidden md:flex overflow-hidden top-0 right-0 -z-10">
-            <div className="relative h-full w-full ">
+            <div className="relative h-full w-full " data-aos="fade-left"
+     data-aos-easing="ease-in-cubic"
+     data-aos-duration="1000">
             <Image src={smiling} className="object-contain h-full  w-full md:object-right lg:object-center "  alt="people smiling" fill priority 
             sizes="(max-width: 768px) 100vw, (max-width: 50vw" />
             </div>
@@ -63,7 +88,8 @@ function Hero() {
 
     <div className="container pt-8  ">
         <div className=" flex flex-col items-center ">
-           <div>
+           <div data-aos="fade-up"
+     data-aos-easing="ease-in-sine" data-aos-once="true" data-aos-duration="300">
             <h2 className="text-synergyBlue font-semibold text-[26px] lg:text-4xl text-left  lg:text-center">Our Essence</h2>
             <p className="lg:max-w-[745px] lg:text-center text-left flex lg:text-xl  lg:px-0 pb-8 lg:pb-4">Explore our tailored solutions driven by integrity and excellence, 
                 empowering individuals and businesses to navigate finance with confidence.</p>
@@ -73,7 +99,8 @@ function Hero() {
 
         <div className="flex flex-col lg:grid grid-cols-2 lg:pt-12 lg:pr-6 lg:px-0 text-xl  gap-9 lg:gap-12">
 
-        <div className="flex flex-col ">
+        <div className="flex flex-col " data-aos="fade-up"
+     data-aos-easing="ease-in-sine" data-aos-once="true" data-aos-duration="500">
 <h3 className="text-xl lg:text-2xl font-semibold lg:mb-7 mb-4">Our Vision </h3>
 <div className="border-b-[0.5px] border-synergyBlack w-full "></div>
 <p className="text-sm lg:mt-7 lg:pr-3 md:text-base lg:text-lg mt-5">
@@ -83,7 +110,8 @@ Excellence, Integrity, Innovation, Collaboration,
  and integrity in all our interactions.</p>
 
 </div>
-<div className="flex flex-col ">
+<div className="flex flex-col " data-aos="fade-up"
+     data-aos-easing="ease-in-sine" data-aos-once="true" data-aos-duration="500">
 <h3 className="text-xl lg:text-2xl font-semibold lg:mb-7 mb-4">Our Mission  </h3>
 <div className="border-b-[0.5px] border-synergyBlack w-full "></div>
 <p className="text-sm lg:mt-7 lg:pr-3 md:text-base lg:text-lg mt-5">
