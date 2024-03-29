@@ -6,7 +6,7 @@ function EngagePage() {
   return (
     <div className='md:h-dvh lg:min-h-[750px] md:min-h-[600px] w-full relative'>
         <div className='md:h-full h-44  w-full relative'>
-      <Image src={engage} className='object-cover object-right-top' alt='Woman smiling with laptop' fill priority/> 
+      <Image src={engage} className='object-cover object-right-top' alt='Woman smiling with laptop' fill priority placeholder='blur'/> 
         </div>
 
       <div className='h-full w-full bg-[#1f1f1f] md:bg-transparent md:bg-gradient-to-r from-[#1f1f1f50] to-[#1f1f1f70] md:absolute md:inset-0 text-white'>

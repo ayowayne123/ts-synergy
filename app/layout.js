@@ -3,6 +3,9 @@ import "./globals.css";
 import localFont from "next/font/local";
 import Header from "./header";
 import Footer from "./footer"
+import logo from "@/public/logo.png"
+import Head from "next/head";
+import Script from 'next/script'
 
 
 
@@ -61,7 +64,7 @@ const blackerSansPro = localFont({
 export const metadata = {
   title: "TS Synergy Consultancy Service Limited",
   description: "Leading provider of financial consultancy services. Empowering individuals and businesses with tailored solutions. Excellence, integrity, innovation.",
-  keywords: "TS Synergy, Synergy Consultancy, financial consultancy, financial services, integrity, excellence, innovation, collaboration, client-centricity",
+  keywords: "TS Synergy, Synergy Consultancy, financial consultancy, financial services, integrity, excellence, innovation, collaboration, client-centricity, financial advisors in nigeria, ",
   author: "Ayomide Wayne",
   openGraph: {
     title: "TS Synergy Consultancy Service Limited",
@@ -70,6 +73,7 @@ export const metadata = {
     siteName: "Ts Synergy",
     locale: "en-US",
     type: "website",
+    image: logo ,
   },
   canonicalUrl: "http://www.tssynergyconsult.com/",
   type: "website",
@@ -79,6 +83,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      
+      
+<Script async src="https://www.googletagmanager.com/gtag/js?id=G-XV4686VJCG"></Script>
+<Script id="ga"
+ dangerouslySetInnerHTML={{
+  __html:`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XV4686VJCG');`
+ }}
+/>
+      
       <body className={blackerSansPro.className}>
         <Header/>
         {children}
