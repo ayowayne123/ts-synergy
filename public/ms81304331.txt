@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "tssynergyconsult.com",
+  "Id": "73925457-b995-413f-b13a-43a9db32f7cd"
+}
